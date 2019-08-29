@@ -90,7 +90,7 @@ function getEventRecords() {
     event.startDate = new Date(date.getTime() 
                                + start.getHours()*MILLISECONDS_PER_HOUR
                                + start.getMinutes()*MILLISECONDS_PER_MINUTE);
-    // Column E has the duration, either another JS date or a number of minutes
+    // Column E has the duration, either another JS Date or a number of minutes
     var dur = data[i][4];
     var duration = 0; // actual duration in milliseconds
     if (isValidDate(dur)) {
